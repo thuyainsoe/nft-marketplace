@@ -10,7 +10,7 @@ body {
 }
 
 .main-container {
-  @apply px-md lg:px-lg w-full;
+  @apply px-[30px] md:px-md lg:px-lg w-full;
 }
 
 @theme {

@@ -31,18 +31,20 @@ const HowItWork = () => {
         <p>Find out how to get started</p>
       </div>
       {/* bottom section */}
-      <div className="grid grid-cols-3 gap-[30px]">
+      <div className="grid md:grid-cols-3 gap-[30px]">
         {items.map((item) => (
           <div
-            className="w-full pt-[10px] p-[20px] lg:p-[30px] rounded-[15px] bg-bgsecondary flex flex-col items-center gap-[20px]"
+            className="w-full pt-[10px] p-[20px] lg:p-[30px] rounded-[15px] bg-bgsecondary flex flex-row md:flex-col items-center gap-[20px]"
             key={item.id}
           >
-            <img className="" src={item.coverImage} alt="" />
-            <div className="flex flex-col items-center gap-[10px]">
-              <h5 className="text-[18px] lg:text-h5 font-semibold text-center">
+            <img className="w-[36%] md:w-auto" src={item.coverImage} alt="" />
+            <div className="flex flex-col items-start md:items-center gap-[10px]">
+              <h5 className="text-[18px] lg:text-h5 font-semibold text-left md:text-center">
                 {item.title}
               </h5>
-              <p className="text-base text-center">{item.description}</p>
+              <p className="text-base text-left md:text-center">
+                {item.description}
+              </p>
             </div>
           </div>
         ))}

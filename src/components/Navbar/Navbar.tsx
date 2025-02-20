@@ -1,15 +1,15 @@
-import { UserSignUpLogo, WebsiteLogo } from "../Icons";
+import { MobileNavToggle, UserSignUpLogo, WebsiteLogo } from "../Icons";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between w-full h-[80px] lg:h-[100px] bg-bg shadow-xs shadow-white text-white sticky top-0 z-[1000] main-container">
+    <div className="flex items-center justify-between w-full h-[54px] sm:h-[80px] lg:h-[100px] bg-bg shadow-xs shadow-white text-white sticky top-0 z-[1000] main-container">
       {/* left section */}
       <div className="flex items-center gap-[5px] font-mono">
         <WebsiteLogo />
         <span className="text-h6 font-semibold">NFT Marketplace</span>
       </div>
       {/* right section */}
-      <div className="flex items-center lg:gap-[10px]">
+      <div className="hidden md:flex items-center lg:gap-[10px]">
         <ul className="flex items-center lg:gap-[10px] text-base font-semibold">
           <li className="px-[10px] lg:px-[20px] cursor-pointer">Marketplace</li>
           <li className="px-[10px] lg:px-[20px] cursor-pointer">Rankings</li>
@@ -21,6 +21,9 @@ const Navbar = () => {
           <UserSignUpLogo />
           <span className="font-semibold text-base">Sign Up</span>
         </button>
+      </div>
+      <div className="md:hidden">
+        <MobileNavToggle />
       </div>
     </div>
   );

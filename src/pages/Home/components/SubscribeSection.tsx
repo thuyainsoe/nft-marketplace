@@ -3,15 +3,18 @@ import { EmailLogo } from "../../../components/Icons";
 const SubscribeSection = () => {
   return (
     <div className="w-full main-container py-[40px] lg:py-[80px]">
-      <div className="w-full bg-bgsecondary p-[30px] lg:p-[60px] rounded-[20px] flex items-center gap-[30px] lg:gap-[80px]">
-        <div className="w-1/2">
+      <div
+        className="w-full md:bg-bgsecondary md:p-[30px] lg:p-[60px] rounded-[20px] flex 
+      flex-col md:flex-row items-center gap-[30px] lg:gap-[80px]"
+      >
+        <div className="w-full md:w-1/2">
           <img
             className="w-full aspect-[425_/_310] object-cover"
             src="/images/subscribe/sub.png"
             alt=""
           />
         </div>
-        <div className="w-1/2 flex flex-col items-start">
+        <div className="w-full md:w-1/2 flex flex-col items-start">
           <h3 className="text-h4 lg:text-h3 font-semibold leading-[100%]">
             Join our weekly digest
           </h3>

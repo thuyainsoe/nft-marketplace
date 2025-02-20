@@ -44,7 +44,7 @@ const TradingSection = () => {
         </div>
       </div>
       {/* bottom section */}
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-[30px] w-full">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[30px] w-full">
         {items?.map((item) => (
           <div className="flex flex-col gap-[15px]" key={item.id}>
             {/* top images */}

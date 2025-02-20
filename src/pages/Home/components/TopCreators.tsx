@@ -75,6 +75,15 @@ const items = [
   },
 ];
 
+const ViewRankBtn = () => {
+  return (
+    <button className="flex items-center gap-[10px] border border-cta rounded-[20px] h-[60px] px-[30px] w-full justify-center md:w-fit">
+      <GetStartedLogo />
+      <span className="font-semibold text-base">View Rankings</span>
+    </button>
+  );
+};
+
 const TopCreators = () => {
   return (
     <div className="py-[40px] lg:py-[80px] flex flex-col items-start gap-[40px] lg:gap-[60px] w-full main-container">
@@ -84,13 +93,12 @@ const TopCreators = () => {
           <h3 className="text-h3 font-semibold">Top creators</h3>
           <p>Checkout Top Rated Creators on the NFT Marketplace</p>
         </div>
-        <button className="flex items-center gap-[10px] border border-cta rounded-[20px] h-[60px]  px-[30px]">
-          <GetStartedLogo />
-          <span className="font-semibold text-base">View Rankings</span>
-        </button>
+        <div className="hidden md:block">
+          <ViewRankBtn />
+        </div>
       </div>
       {/* bottom section */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-[30px] w-full">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-[20px] md:gap-[30px] w-full">
         {items.map((item, index) => (
           <div className="w-full relative lg:aspect-square flex lg:flex-col gap-[20px] p-[20px] bg-bgsecondary rounded-[20px] items-center justify-center">
             <img
@@ -110,6 +118,9 @@ const TopCreators = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="block md:hidden w-full text-center">
+        <ViewRankBtn />
       </div>
     </div>
   );

@@ -29,6 +29,15 @@ const items = [
   },
 ];
 
+const SeeAllBtn = () => {
+  return (
+    <button className="flex items-center gap-[10px] border border-cta rounded-[20px] h-[60px] px-[30px] w-full md:w-fit justify-center">
+      <SellALlLogo />
+      <span className="font-semibold text-base">See All</span>
+    </button>
+  );
+};
+
 const DiscoverSection = () => {
   return (
     <div className="py-[40px] lg:py-[80px] gap-[40px] lg:gap-[60px] flex flex-col items-start main-container">
@@ -38,19 +47,18 @@ const DiscoverSection = () => {
           <h3 className="text-h3 font-semibold">Discover More NFTs</h3>
           <p>Checkout Top Rated Creators on the NFT Marketplace</p>
         </div>
-        <button className="flex items-center gap-[10px] border border-cta rounded-[20px] h-[60px]  px-[30px]">
-          <SellALlLogo />
-          <span className="font-semibold text-base">See All</span>
-        </button>
+        <div className="hidden md:block">
+          <SeeAllBtn />
+        </div>
       </div>
       {/* bottom section */}
-      <div className="grid grid-cols-3 gap-[30px]">
+      <div className="grid  md:grid-cols-3 gap-[20px] md:gap-[30px]">
         {items.map((item) => (
           <div className="w-full" key={item.id}>
             <div className="w-full aspect-[420_/_300]">
               <img src={item.coverImage} alt="" />
             </div>
-            <div className="w-full px-[30px] py-[20px] flex flex-col items-start gap-[25px] bg-bgsecondary rounded-b-[20px]">
+            <div className="w-full px-[15px] lg:px-[30px] py-[20px] flex flex-col items-start gap-[25px] bg-bgsecondary rounded-b-[20px]">
               {/* top section */}
               <div className="flex items-start flex-col">
                 <h5 className="text-h5 font-semibold">{item?.title}</h5>
@@ -81,6 +89,9 @@ const DiscoverSection = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="block md:hidden w-full">
+        <SeeAllBtn />
       </div>
     </div>
   );

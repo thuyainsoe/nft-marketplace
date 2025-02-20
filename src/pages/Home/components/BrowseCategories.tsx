@@ -53,7 +53,7 @@ const BrowseCategories = () => {
   return (
     <div className="py-[40px] lg:py-[80px] gap-[40px] lg:gap-[60px] flex flex-col items-start w-full main-container">
       <h3 className="text-h3 font-semibold">Browse Categories</h3>
-      <div className="w-full grid grid-cols-4 gap-[30px]">
+      <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-[20px] md:gap-[30px]">
         {items?.map((item) => (
           <div className="w-full bg-bgsecondary overflow-hidden rounded-[20px]">
             <div className="w-full aspect-square overflow-hidden relative">
