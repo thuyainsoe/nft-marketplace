@@ -77,7 +77,7 @@ const items = [
 
 const TopCreators = () => {
   return (
-    <div className="py-[80px] flex flex-col items-start gap-[60px] w-full main-container">
+    <div className="py-[40px] lg:py-[80px] flex flex-col items-start gap-[40px] lg:gap-[60px] w-full main-container">
       {/* top section */}
       <div className="w-full flex items-center justify-between">
         <div className="flex flex-col items-start gap-[10px]">
@@ -90,22 +90,22 @@ const TopCreators = () => {
         </button>
       </div>
       {/* bottom section */}
-      <div className="grid grid-cols-4 gap-[30px] w-full">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-[30px] w-full">
         {items.map((item, index) => (
-          <div className="w-full relative aspect-square flex flex-col gap-[20px] p-[20px] bg-bgsecondary rounded-[20px] items-center justify-center">
+          <div className="w-full relative lg:aspect-square flex lg:flex-col gap-[20px] p-[20px] bg-bgsecondary rounded-[20px] items-center justify-center">
             <img
-              className="w-1/2 rounded-full object-cover"
+              className="w-[60px] lg:w-1/2 rounded-full object-cover"
               src={item.avator}
               alt=""
             />
-            <div className="flex flex-col items-center gap-[5px] w-full">
+            <div className="flex flex-col items-start lg:items-center gap-[5px] w-full">
               <h5 className="text-h5 font-semibold">{item.name}</h5>
               <div className="flex items-center gap-[15px]">
                 <span className="text-caption">Total Sales :</span>
                 <span className="font-mono">{item.amount}</span>
               </div>
             </div>
-            <div className="font-mono text-caption absolute top-[20px] left-[20px] flex items-center justify-center w-[30px] h-[30px] rounded-full bg-bg">
+            <div className="font-mono text-caption absolute top-[10px] lg:top-[20px] left-[10px] lg:left-[20px] flex items-center justify-center w-[30px] h-[30px] rounded-full bg-bg">
               {index + 1}
             </div>
           </div>

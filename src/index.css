@@ -10,7 +10,7 @@ body {
 }
 
 .main-container {
-  @apply px-lg w-full;
+  @apply px-md lg:px-lg w-full;
 }
 
 @theme {
@@ -31,6 +31,7 @@ body {
   --text-captionfont: 12px;
 
   --spacing-lg: 8%;
+  --spacing-md: 4%;
 
   --font-mono: "Space Mono", serif;
   --font-work: "Work Sans", serif;

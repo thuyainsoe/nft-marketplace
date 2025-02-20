@@ -4,7 +4,7 @@ const MagicMashroom = () => {
   return (
     <div className="relative w-full aspect-[1280/640] flex flex-col justify-end py-[60px]">
       {/* Background Image */}
-      {/* <div className="absolute inset-0 bg-[url('/images/tranding/tranding-img4.png')] bg-cover bg-center z-[200]"></div> */}
+      <div className="absolute inset-0 bg-[url('/images/tranding/tranding-img4.png')] bg-cover bg-center z-[200]"></div>
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#A259FF] to-transparent z-[300]"></div>
@@ -21,7 +21,7 @@ const MagicMashroom = () => {
             />
             <span className="text-white">Shroomie</span>
           </div>
-          <h2 className="text-h2 font-bold">Magic Mashrooms</h2>
+          <h2 className="text-h3 lg:text-h2 font-bold">Magic Mashrooms</h2>
           <button className="flex items-center gap-[5px] bg-white text-black rounded-[20px] h-[60px]  px-[30px]">
             <SellALlLogo />
             <span className="font-semibold text-base">See NFT</span>

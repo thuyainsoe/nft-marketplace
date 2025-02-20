@@ -33,7 +33,7 @@ const items = [
 
 const TradingSection = () => {
   return (
-    <div className="py-[80px] gap-[60px] flex flex-col items-start w-full main-container">
+    <div className="py-[40px] lg:py-[80px] gap-[40px] lg:gap-[60px] flex flex-col items-start w-full main-container">
       {/* top section */}
       <div className="flex flex-col items-start gap-[10px]">
         <h3 className="text-h3 text-white font-semibold">
@@ -44,7 +44,7 @@ const TradingSection = () => {
         </div>
       </div>
       {/* bottom section */}
-      <div className="grid grid-cols-3 gap-[30px] w-full">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-[30px] w-full">
         {items?.map((item) => (
           <div className="flex flex-col gap-[15px]" key={item.id}>
             {/* top images */}

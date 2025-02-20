@@ -31,11 +31,11 @@ const items = [
 
 const DiscoverSection = () => {
   return (
-    <div className="py-[80px] gap-[60px] flex flex-col items-start main-container">
+    <div className="py-[40px] lg:py-[80px] gap-[40px] lg:gap-[60px] flex flex-col items-start main-container">
       {/* top section */}
       <div className="w-full flex items-center justify-between">
         <div className="flex flex-col items-start gap-[10px]">
-          <h3 className="text-h3 font-semibold">Top creators</h3>
+          <h3 className="text-h3 font-semibold">Discover More NFTs</h3>
           <p>Checkout Top Rated Creators on the NFT Marketplace</p>
         </div>
         <button className="flex items-center gap-[10px] border border-cta rounded-[20px] h-[60px]  px-[30px]">

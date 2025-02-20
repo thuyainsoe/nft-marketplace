@@ -24,7 +24,7 @@ const items = [
 
 const HowItWork = () => {
   return (
-    <div className="py-[80px] gap-[60px] flex flex-col items-start main-container">
+    <div className="py-[40px] lg:py-[80px] gap-[40px] lg:gap-[60px] flex flex-col items-start main-container">
       {/* top section */}
       <div className="flex flex-col items-start gap-[10px]">
         <h3 className="text-h3 font-semibold">How it works</h3>
@@ -34,12 +34,14 @@ const HowItWork = () => {
       <div className="grid grid-cols-3 gap-[30px]">
         {items.map((item) => (
           <div
-            className="w-full pt-[10px] p-[30px] rounded-[15px] bg-bgsecondary flex flex-col items-center gap-[20px]"
+            className="w-full pt-[10px] p-[20px] lg:p-[30px] rounded-[15px] bg-bgsecondary flex flex-col items-center gap-[20px]"
             key={item.id}
           >
             <img className="" src={item.coverImage} alt="" />
             <div className="flex flex-col items-center gap-[10px]">
-              <h5 className="text-h5 font-semibold">{item.title}</h5>
+              <h5 className="text-[18px] lg:text-h5 font-semibold text-center">
+                {item.title}
+              </h5>
               <p className="text-base text-center">{item.description}</p>
             </div>
           </div>

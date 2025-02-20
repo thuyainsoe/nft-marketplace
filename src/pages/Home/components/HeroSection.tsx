@@ -2,10 +2,10 @@ import { GetStartedLogo } from "../../../components/Icons";
 
 const HeroSection = () => {
   return (
-    <div className="w-full py-[80px] flex items-center justify-between gap-[30px] main-container">
+    <div className="w-full py-[40px] lg:py-[80px] flex items-center justify-between gap-[30px] main-container">
       {/* left section */}
-      <div className="flex flex-col items-start gap-[30px] w-1/2">
-        <h1 className="text-h1 font-bold leading-[100%]">
+      <div className="flex flex-col items-start gap-[20px] lg:gap-[30px] w-1/2">
+        <h1 className="text-h3 lg:text-h1 font-bold leading-[120%] lg:leading-[100%]">
           Discover digital art & Collect NFTs
         </h1>
         <div className="text-base">
