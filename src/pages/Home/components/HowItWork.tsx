@@ -27,7 +27,7 @@ const HowItWork = () => {
     <div className="py-[40px] lg:py-[80px] gap-[40px] lg:gap-[60px] flex flex-col items-start main-container">
       {/* top section */}
       <div className="flex flex-col items-start gap-[10px]">
-        <h3 className="text-h3 font-semibold">How it works</h3>
+        <h3 className="text-h3 font-semibold leading-[120%]">How it works</h3>
         <p>Find out how to get started</p>
       </div>
       {/* bottom section */}

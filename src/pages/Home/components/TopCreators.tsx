@@ -90,7 +90,7 @@ const TopCreators = () => {
       {/* top section */}
       <div className="w-full flex items-center justify-between">
         <div className="flex flex-col items-start gap-[10px]">
-          <h3 className="text-h3 font-semibold">Top creators</h3>
+          <h3 className="text-h3 font-semibold leading-[120%]">Top creators</h3>
           <p>Checkout Top Rated Creators on the NFT Marketplace</p>
         </div>
         <div className="hidden md:block">

@@ -36,7 +36,7 @@ const TradingSection = () => {
     <div className="py-[40px] lg:py-[80px] gap-[40px] lg:gap-[60px] flex flex-col items-start w-full main-container">
       {/* top section */}
       <div className="flex flex-col items-start gap-[10px]">
-        <h3 className="text-h3 text-white font-semibold">
+        <h3 className="text-h3 text-white font-semibold leading-[120%]">
           Trending Collection
         </h3>
         <div className="text-base text-white">

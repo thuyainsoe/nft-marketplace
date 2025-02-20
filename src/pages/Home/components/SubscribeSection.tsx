@@ -24,10 +24,10 @@ const SubscribeSection = () => {
           <div className="!mt-[20px] lg:!mt-[40px] block w-full relative">
             <input
               type="text"
-              className="w-full h-[45px] lg:h-[60px] bg-white outline-none rounded-[20px] px-[20px] text-black"
+              className="w-full h-[45px] xl:h-[60px] bg-white outline-none rounded-[20px] px-[20px] text-black"
               placeholder="Enter your email here"
             />
-            <button className="rounded-[20px] !mt-[10px] lg:!mt-0 relative lg:absolute h-[45px] lg:h-[60px] top-0 right-0 bg-cta w-full lg:w-[211px] flex items-center justify-center gap-[5px]">
+            <button className="rounded-[20px] !mt-[10px] xl:!mt-0 relative xl:absolute h-[45px] xl:h-[60px] top-0 right-0 bg-cta w-full xl:w-[211px] flex items-center justify-center gap-[5px]">
               <EmailLogo />
               Subscribe
             </button>

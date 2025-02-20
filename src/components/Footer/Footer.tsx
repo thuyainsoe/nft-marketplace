@@ -54,12 +54,12 @@ const Footer = () => {
           <div className="block w-full relative !mt-[20px]">
             <input
               type="text"
-              className="w-full bg-white outline-none rounded-[20px] px-[20px] text-black h-[45px] lg:h-[60px]"
+              className="w-full bg-white outline-none rounded-[20px] px-[20px] text-black h-[45px] xl:h-[60px]"
               placeholder="Enter your email here"
             />
             <button
-              className="rounded-[20px] lg:!mt-[10px] xl:!mt-0 absolute lg:relative xl:absolute h-[45px] lg:h-[60px] top-0 right-0 bg-cta 
-            w-fit lg:w-full xl:w-fit flex px-[20px] items-center justify-center gap-[5px]"
+              className="rounded-[20px] !mt-[10px] xl:!mt-0 relative xl:absolute h-[45px] xl:h-[60px] top-0 right-0 bg-cta 
+            w-full xl:w-fit flex px-[20px] items-center justify-center gap-[5px]"
             >
               <EmailLogo />
               Subscribe
