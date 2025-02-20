@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@import "./assets/reset.css";
+
+body {
+  background-color: #2b2b2b;
+  color: #fff;
+  @apply font-work;
+}
+
+.main-container {
+  @apply px-lg w-full;
+}
+
+@theme {
+  --color-bg: #2b2b2b;
+  --color-bgsecondary: #3b3b3b;
+  --color-caption: #858584;
+  --color-text: #fff;
+  --color-cta: #a259ff;
+  --color-blueacent: #377df7;
+  --color-redacent: #ff7262;
+
+  --text-h1: 67px;
+  --text-h2: 51px;
+  --text-h3: 38px;
+  --text-h4: 28px;
+  --text-h5: 22px;
+  --text-base: 16px;
+  --text-captionfont: 12px;
+
+  --spacing-lg: 8%;
+
+  --font-mono: "Space Mono", serif;
+  --font-work: "Work Sans", serif;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 1024px) {
+  @theme {
+    --font-h1: 50px;
+    --font-h2: 40px;
+    --font-h3: 30px;
+    --font-h4: 24px;
+    --font-h5: 20px;
+    --font-base: 14px;
+    --text-captionfont: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  @theme {
+    --font-h1: 40px;
+    --font-h2: 32px;
+    --font-h3: 26px;
+    --font-h4: 20px;
+    --font-h5: 18px;
+    --font-base: 14px;
+    --text-captionfont: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  @theme {
+    --font-h1: 32px;
+    --font-h2: 28px;
+    --font-h3: 22px;
+    --font-h4: 18px;
+    --font-h5: 16px;
+    --font-base: 12px;
+    --text-captionfont: 10px;
+  }
+}
