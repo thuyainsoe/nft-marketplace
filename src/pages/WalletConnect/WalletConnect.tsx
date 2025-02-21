@@ -29,13 +29,13 @@ const WalletConnect = () => {
       </div>
 
       {/* Right Section */}
-      <div className="w-full md:w-1/2  flex flex-col  md:items-start justify-center gap-[10px] py-[30px] md:py-0 px-[15px] sm:px-[30px] md:px-0">
+      <div className="w-full md:w-1/2  flex flex-col items-center  md:items-start justify-center gap-[10px] py-[30px] md:py-0 px-[15px] sm:px-[30px] md:px-0">
         <h2 className="text-h3 lg:text-h2 font-semibold">Connect wallet</h2>
-        <div className="text-[18px] lg:text-[22px] max-w-[70%]">
+        <div className="text-[18px] lg:text-[22px] max-w-[70%] text-center md:text-left">
           Choose a wallet you want to connect. There are several wallet
           providers.
         </div>
-        <div className="!mt-[30px] flex flex-col md:items-start gap-[10px]">
+        <div className="!mt-[30px] flex flex-col md:items-start gap-[15px]">
           {items.map((item) => (
             <div
               key={item.id}

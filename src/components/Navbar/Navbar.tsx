@@ -34,10 +34,13 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button className="flex items-center gap-[5px] bg-cta rounded-[20px] h-[45px] lg:h-[60px]  px-[30px]">
+        <NavLink
+          to={"/sign-up"}
+          className="flex items-center gap-[5px] bg-cta rounded-[20px] h-[45px] lg:h-[60px]  px-[30px]"
+        >
           <UserSignUpLogo />
           <span className="font-semibold text-base">Sign Up</span>
-        </button>
+        </NavLink>
       </div>
       <div className="md:hidden">
         <MobileNavToggle />
