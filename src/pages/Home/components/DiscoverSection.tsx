@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { SellALlLogo } from "../../../components/Icons";
 const items = [
   {
@@ -56,7 +57,11 @@ const DiscoverSection = () => {
       {/* bottom section */}
       <div className="grid  md:grid-cols-3 gap-[20px] md:gap-[30px]">
         {items.map((item) => (
-          <div className="w-full" key={item.id}>
+          <div className="w-full relative h-full" key={item.id}>
+            <NavLink
+              to={"/nft-page"}
+              className="absolute top-0 left-0 w-full h-full z-[300]"
+            ></NavLink>
             <div className="w-full aspect-[420_/_300]">
               <img src={item.coverImage} alt="" />
             </div>
