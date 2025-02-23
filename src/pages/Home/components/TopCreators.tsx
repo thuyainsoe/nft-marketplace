@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { GetStartedLogo } from "../../../components/Icons";
 
 const items = [
@@ -86,7 +87,7 @@ const ViewRankBtn = () => {
 
 const TopCreators = () => {
   return (
-    <div className="py-[40px] lg:py-[80px] flex flex-col items-start gap-[40px] lg:gap-[60px] w-full main-container">
+    <div className="py-[40px] lg:py-[80px] flex flex-col items-start gap-[40px] lg:gap-[60px] w-full h-auto main-container">
       {/* top section */}
       <div className="w-full flex items-center justify-between">
         <div className="flex flex-col items-start gap-[10px]">
@@ -101,6 +102,10 @@ const TopCreators = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-[20px] md:gap-[30px] w-full">
         {items.map((item, index) => (
           <div className="w-full relative lg:aspect-square flex lg:flex-col gap-[20px] p-[20px] bg-bgsecondary rounded-[20px] items-center justify-center">
+            <NavLink
+              to={"/artist-detail"}
+              className="absolute top-0 left-0 w-full h-full"
+            ></NavLink>
             <img
               className="w-[60px] lg:w-1/2 rounded-full object-cover"
               src={item.avator}
