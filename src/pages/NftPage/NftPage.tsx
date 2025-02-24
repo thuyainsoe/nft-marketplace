@@ -5,6 +5,7 @@ import MoreFromArtist from "./components/MoreFromArtist";
 
 const NftPage = () => {
   useEffect(() => {
+    //
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
   return (
